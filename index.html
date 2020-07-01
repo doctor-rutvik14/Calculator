@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel = "icon" href =  "images/calculator.png" type = "image/x-icon"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="style">
+        <form name="forms">
+            <input type="text" name="Ans" id="ans"><br>
+            <input type="button" id="ClearAll"  value="Clear All" onclick="clearAll()">
+            <button type="button" value="Bcks" onclick="Bcks()" ><i class='fas fa-backspace'></i></button>
+            <input type="button" id = "OpP" value=" % " onclick="ValueP()">
+            <input type="button" id = "Op" value=" / " onclick="ValueS('/')"><br>
+            <input type="button" value=" 7 " onclick="Value(7)">
+            <input type="button" value=" 8 " onclick="Value(8)">
+            <input type="button" value=" 9 " onclick="Value(9)">
+            <input type="button" id = "Op" value=" - " onclick="ValueS('-')"><br>
+            <input type="button" value=" 4 " onclick="Value(4)">
+            <input type="button" value=" 5 " onclick="Value(5)">
+            <input type="button" value=" 6 " onclick="Value(6)">
+            <input type="button" id = "Op" value=" X " onclick="ValueS('*')"><br>
+            <input type="button" value=" 1 " onclick="Value(1)">
+            <input type="button" value=" 2 " onclick="Value(2)">
+            <input type="button" value=" 3 " onclick="Value(3)">
+            <input type="button" id = "Op" value=" + " onclick="ValueS('+')"><br>
+            
+            <input type="button" value=" 0 " onclick="Value(0)">
+            <input type="button" value=" . " onclick="Value('.')">
+            <input type="button" id="eval" value=" = " onclick="equal('=')(forms.Ans.value)">
+        </form>
+    </div>
+    <script defer type="text/javascript" src="script.js"></script>
+</body>
+</html>
